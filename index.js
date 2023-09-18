@@ -6,7 +6,9 @@
 //     <ul><li>Thing1</li><li>Thing2</li></ul> , document.getElementById("root")
 // )
 
+// NAVBAR
 
+/*
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -62,3 +64,59 @@ ReactDOM.render(
     ,
     document.getElementById("root")
 )
+*/
+
+
+/*
+JSX - javascript XMLDocument, This is a flavour of javascript which looks a lot like html, made react very declarative instead of imperative.
+
+ReactDOM.render(
+<h1 className="header"> This is JSX</h1>, document.getElementById("root"))
+
+ReactDOM.render(
+    <div>
+        <h1 className="header"> This is JSX</h1>
+        <p className="Body"> This is body after wrapping!</p>
+    </div>
+    , document.getElementById("root"))
+*/
+
+// saving it as a variable
+
+/*
+const page = (
+<div>
+<h1 className="header"> This is JSX</h1>
+<p className="Body"> This is body after wrapping!</p>
+</div>
+)
+
+ReactDOM.render(
+    page
+    , document.getElementById("root"))
+*/
+
+/*
+Challenge: 
+
+Create a navbar in JSX:
+    - Use the semantic `nav` element as the parent wrapper
+    - Have an h1 element with the brand name of your "website"
+    - Insert an unordered list for the other nav elements
+        - Inside the `ul`, have three `li`s for "Pricing",
+        "About", and "Contact"
+    - Don't worry about styling yet - it'll just be plain-looking HTML for now
+*/
+
+const pageNavbar = (
+    <nav>
+        <h1>Ram's Website</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
+
+ReactDOM.render(pageNavbar, document.getElementById("root"))
